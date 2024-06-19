@@ -1,3 +1,3 @@
 class DataAnonymizer:
     def anonymize(self, data: str) -> str:
-        raise NotImplementedError("This method should be overridden in subclasses")
+        raise NotImplementedError("Cette méthode doit être surchargée dans les sous-classes")

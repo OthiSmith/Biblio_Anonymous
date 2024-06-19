@@ -42,7 +42,7 @@ class Anonymizer:
 
         anonymized_content = self.anonymize_text(content, method)
 
-        # Generate a new file path
+        # Générer un nouveau chemin d'accès au fichier
         directory, filename = os.path.split(file_path)
         name, ext = os.path.splitext(filename)
         new_file_path = os.path.join(directory, f"{name}_anonymized{ext}")
@@ -50,15 +50,15 @@ class Anonymizer:
         with open(new_file_path, 'w') as new_file:
             new_file.write(anonymized_content)
 
-        print(f"Anonymized file created at: {new_file_path}")
+        print(f"Fichier anonymisé créé dans: {new_file_path}")
             
 if __name__ == '__main__':
     anonymizer = Anonymizer()
 
     # Anonymiser un texte
-    text = "Sensitive information"
-    anonymized_text = anonymizer.anonymize_text(text, 'randomize')
-    print("Masked Text:", anonymized_text)
+    texte = "Sensitive information"
+    texte_anonymise = anonymizer.anonymize_text(texte, 'crypto')
+    print("Texte anonymisé:", texte_anonymise)
 
     # Anonymiser un fichier
-    anonymizer.anonymize_file('test.txt', 'crypto')
+    anonymizer.anonymize_file('groupe.txt', 'crypto')
