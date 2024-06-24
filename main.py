@@ -57,8 +57,8 @@ if __name__ == '__main__':
 
     # Anonymiser un texte
     texte = "Anonymisation de texte"
-    texte_anonymise = anonymizer.anonymize_text(texte, 'suppress')
+    texte_anonymise = anonymizer.anonymize_text(texte, 'pseudonymize')
     print("Texte anonymisé:", texte_anonymise)
 
     # Anonymiser un fichier
-    anonymizer.anonymize_file('test.txt', 'suppress')
+    anonymizer.anonymize_file('test.txt', 'pseudonymize')
