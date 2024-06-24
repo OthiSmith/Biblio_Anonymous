@@ -56,9 +56,9 @@ if __name__ == '__main__':
     anonymizer = Anonymizer()
 
     # Anonymiser un texte
-    texte = "Sensitive information"
-    texte_anonymise = anonymizer.anonymize_text(texte, 'crypto')
+    texte = "Anonymisation de texte"
+    texte_anonymise = anonymizer.anonymize_text(texte, 'suppress')
     print("Texte anonymisé:", texte_anonymise)
 
     # Anonymiser un fichier
-    anonymizer.anonymize_file('groupe.txt', 'crypto')
+    anonymizer.anonymize_file('test.txt', 'suppress')
